@@ -25,6 +25,7 @@ class AssetsPaths {
   static const String personnimage = "assets/svgimages/personnimage.svg";
   static const String deleteicon = "assets/svgimages/delete.svg";
   static const String chatimage = "assets/svgimages/chatimage.svg";
+  static const String information = "assets/svgimages/information.svg";
 
 
 

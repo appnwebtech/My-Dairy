@@ -81,18 +81,52 @@ class _ChatboxscreenState extends State<Chatboxscreen> {
           child: ListView.builder(
               itemCount: 10,
               itemBuilder: (context, index){
-          return Row(
-            children: [
-              SvgPicture.asset(AssetsPaths.personnimage),
-              Column(
+          return InkWell(
+            onTap: (){
+              Get.toNamed("/chattingscreen");
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Shivam Gupta"),
-                  Text("Good Thanks, Are you Available for the meeting.  We need to discuss the project.")
+                  SvgPicture.asset(AssetsPaths.personnimage, height: 50, width: 50,),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8.0),
+                        child: Text("Shivam Gupta", style: GoogleFonts.poppins(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w500,
+                          color: primary,
+                        ),),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8.0),
+                        child: Container(
+                          width: 250,
+                          child: Text(
+                            "Good Thanks, Are you Available for the meeting.  We need to discuss the project. Good Thanks, Are you Available for the meeting.  We need to discuss the project",
+                            style: GoogleFonts.poppins(
+                              fontSize: 8,
+                              color: Color(0xff7D7D7D),
+                          ),
+                          maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                  Text("10:30 AM", style: GoogleFonts.poppins(
+                    fontSize: 8,
+                    color: Color(0xff7D7D7D),
+                  ),)
                 ],
               ),
-              Text("10:30 AM")
-            ],
+            ),
           );
           }),
         )
