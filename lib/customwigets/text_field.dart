@@ -172,6 +172,7 @@ class _TextFieldSimpleState extends State<TextFieldStyleOne> {
                 ),
           SizedBox(height: widget.space== null? null : widget.space),
           TextFormField(
+            textAlignVertical: TextAlignVertical.center,
             cursorHeight: widget.cursorheight,
             validator: widget.validator as String? Function(String?)?,
             cursorColor: Colors.black,

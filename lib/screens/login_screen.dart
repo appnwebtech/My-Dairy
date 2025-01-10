@@ -2,16 +2,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mydiary_dev/screens/facelockscreen.dart';
-import 'package:mydiary_dev/screens/fingerprintscreen.dart';
 import '../Constants/Colors.dart';
 import '../Constants/String.dart';
 import '../Constants/imagespath.dart';
 import '../customwigets/newbutton.dart';
 import '../customwigets/text_field.dart';
-import 'homescreen.dart';
+
 
 // New file: assets_paths.dart
 
@@ -23,7 +20,10 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final TextEditingController logincontroller = TextEditingController();
+  final TextEditingController username = TextEditingController();
+  final TextEditingController password = TextEditingController();
+
+
   bool isChecked = false;
 
   @override
@@ -105,7 +105,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               TextFieldStyleOne(
                 floatinglabelbehavior: FloatingLabelBehavior.always,
-                controller: logincontroller,
+                controller: username,
                 enabledBorder: true,
                 suffixiconcolor: primary,
                 prefix: Image(
@@ -122,7 +122,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               TextFieldStyleOne(
                 floatinglabelbehavior: FloatingLabelBehavior.always,
-                controller: logincontroller,
+                controller: password,
                 enabledBorder: true,
                 isPassword: true,
                 suffixiconcolor: primary,

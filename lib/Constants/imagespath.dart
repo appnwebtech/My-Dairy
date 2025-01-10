@@ -26,10 +26,14 @@ class AssetsPaths {
   static const String deleteicon = "assets/svgimages/delete.svg";
   static const String chatimage = "assets/svgimages/chatimage.svg";
   static const String information = "assets/svgimages/information.svg";
-
-
-
-
+  static const String whitebackbutton = "assets/svgimages/whitebackbutton.svg";
+  static const String mailicon = "assets/svgimages/mailicon.svg";
+  static const String callicon= "assets/svgimages/callicon.svg";
+  static const String lockicon = "assets/svgimages/lockicon.svg";
+  static const String camera = "assets/svgimages/camera.svg";
+  static const String send = "assets/svgimages/send.svg";
+  static const String blueline = "assets/svgimages/blueline.svg";
+  static const String tab1 = "assets/svgimages/tab1.png";
   // PNG Image Paths
   static const String personLogo = "assets/personlogo.png";
   static const String chatIcon = "assets/chat.png";

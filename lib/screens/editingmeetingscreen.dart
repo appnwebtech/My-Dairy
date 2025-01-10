@@ -3,12 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mydiary_dev/Constants/imagespath.dart';
-
 import '../Constants/Colors.dart';
-import '../customwigets/bottomslider.dart';
 import '../customwigets/newbutton.dart';
 import '../customwigets/shareslider.dart';
 import '../customwigets/text_field.dart';

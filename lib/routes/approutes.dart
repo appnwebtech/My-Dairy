@@ -1,7 +1,11 @@
 import 'package:get/get.dart';
+import 'package:mydiary_dev/screens/allmeetingschedulescreen.dart';
+import 'package:mydiary_dev/screens/allnotesscreen.dart';
+import 'package:mydiary_dev/screens/editingnotesscreen.dart';
 import 'package:mydiary_dev/screens/facelockscreen.dart';
 import 'package:mydiary_dev/screens/fingerprintscreen.dart';
 import 'package:mydiary_dev/screens/homescreen.dart';
+import 'package:mydiary_dev/screens/profilescreen.dart';
 
 import '../screens/chatboxscreen.dart';
 import '../screens/chattingscreen.dart';
@@ -19,7 +23,12 @@ class AppRoutes {
     GetPage(name: '/meetingschedule', page: ()=>MeetingScheduleScreen()),
     GetPage(name: '/notesscreen', page: ()=> NotesScreen()),
     GetPage(name: '/editmeeting', page: ()=> EditingMeetingScheduleScreen()),
-    GetPage(name: '/chatbox', page: ()=> Chatboxscreen()),
-    GetPage(name: '/chattingscreen', page: ()=> ChattingScreen())
+    GetPage(name: '/chatbox', page: ()=> ChatBoxScreen()),
+    GetPage(name: '/chattingscreen', page: ()=> ChattingScreen()),
+    GetPage(name: '/profilescreen', page: ()=>ProfileScreen()),
+    GetPage(name: '/allmeetingscreen', page: ()=>Allmeetingschedulescreen()),
+    GetPage(name: '/allnotesscreen', page: ()=> AllNotesScreen()),
+    GetPage(name: '/editnotesscreen', page: ()=> EditingNotesScreen()),
+
   ];
 }

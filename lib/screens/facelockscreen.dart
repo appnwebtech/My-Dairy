@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mydiary_dev/screens/login_screen.dart';
-
 import '../Constants/Colors.dart';
 import '../Constants/String.dart';
 import '../Constants/imagespath.dart';
@@ -39,10 +39,7 @@ class _FaceLockScreenState extends State<FaceLockScreen> {
                           splashColor: primary,
                           highlightColor: Colors.white,
                           onTap: () {
-                            Navigator.pop(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => LoginScreen()));
+                            Get.toNamed('/homescreen');
                           },
                           child: Image.asset(
                             AssetsPaths.backButtonIcon,  // Using the variable for back button image
